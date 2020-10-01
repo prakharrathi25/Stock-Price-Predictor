@@ -135,12 +135,12 @@ predicted_stock_price
 
 ''' Visualising the predictions ''' 
 
-plt.plot(predicted_stock_price, color = 'r', label = 'Predicted Google Stock Price')
-plt.plot(real_stock_price, color = 'g', label = 'Real Google Stock Price')
+plt.plot(predicted_stock_price, color = 'r', label = 'Predicted Stock Price (Google)')
+plt.plot(real_stock_price, color = 'g', label = 'Real Stock Price (Google)')
 
-plt.title('Google Stock Price Predictions')
+plt.title('Stock Price Predictions (Google)')
 
-plt.xlabel('Time')
+plt.xlabel('Time Period')
 plt.ylabel('Open Google Stock Price')
 plt.legend()
 plt.show()
