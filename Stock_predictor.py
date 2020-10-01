@@ -43,13 +43,13 @@ print(scaled_data)
 # for each individual price in y 
 X_train = []
 y_train = []
-
+# window size = 60
 for i in range(60, 1258):
     X_train.append(scaled_data[i - 60 : i, 0])
 #     X_train = scaled_data[i-60 : i, 0]
 #     y_train = scaled_data[i:i+1, 0]
     y_train.append(scaled_data[i, 0])
-
+# converting to arrays
 X_train, y_train = np.array(X_train), np.array(y_train)
 
 # Reshaping the data - used to add a new dimension to the data
